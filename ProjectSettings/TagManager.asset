@@ -2,8 +2,25 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Collectible
+  - Obstacle
+  - Enemy
+  - Blocker
+  - Ground
+  - GameTag1
+  - GameTag2
+  - GameTag3
+  - GameTag4
+  - GameTag5
+  - GameTag6
+  - GameTag7
+  - GameTag8
+  - GameTag9
+  - GameTag10
+  - Missile
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -15,11 +32,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - GameLayer0
+  - GameLayer1
+  - GameLayer2
+  - GameLayer3
+  - GameLayer4
   - 
   - 
   - 
@@ -41,3 +58,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default
