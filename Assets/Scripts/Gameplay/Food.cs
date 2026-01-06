@@ -2,16 +2,25 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
+    [SerializeField] 
+    private FoodType foodType;
     enum FoodType
     {
         Edible,
         Inedible
     }
 
+    private Rigidbody2D rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,11 +34,11 @@ public class Food : MonoBehaviour
     /// </summary>
     public void Init()
     {
-        //transform.position = new Vector2(a_position, transform.position.y);
-        //GetComponent<SpriteRenderer>().sprite = a_sprite;
-        //GetComponent<PolygonCollider2D>().points = a_collider.points;
-        // Forward Jump force.
-
+        // Force calculation for forward jump motion.
+        rb.linearVelocity = Vector2.zero;
+        float forceX = Random.Range(2f, 5f);
+        float forceY = Random.Range(5f, 7f);
+        rb.AddForce(new Vector2(forceX, forceY), ForceMode2D.Impulse);
     }
 
 }

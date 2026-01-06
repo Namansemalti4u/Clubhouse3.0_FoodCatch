@@ -28,6 +28,8 @@ namespace Clubhouse.Games.FoodCatch.Core
         private ObjectPoolManager<Food>[] pool;
         private SpawnRateManager spawnManager;
 
+        [SerializeField] private Transform spawnPoint;
+
         public void Init(Configuration a_configuration, Reference a_reference)
         {
             configuration = a_configuration;
@@ -56,7 +58,8 @@ namespace Clubhouse.Games.FoodCatch.Core
         private void CreateFood()
         {
             var food = pool[0].Get(reference.envParent);
-            //food.Init(0, configuration.foodSprites[index], configuration.collider2Ds[index]);
+            food.transform.position = spawnPoint.position;
+            food.Init();
         }
 
         public void Despawn(Food food)
