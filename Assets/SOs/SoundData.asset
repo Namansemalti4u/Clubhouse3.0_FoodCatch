@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f44dec273d6864daf1bc11e19212fe, type: 3}
+  m_Name: SoundData
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: BGM
+    clip: {fileID: 8300000, guid: f820f082f719bca47afb8f5aa8919e94, type: 3}
+    loop: 1
+    volume: 1
+    pitch: 1
+    sources: []
+    audioMixerGroup: {fileID: 0}
+  - name: Bounce
+    clip: {fileID: 8300000, guid: 23e4ca9371e3a9f469cf946b6e4750fe, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    sources: []
+    audioMixerGroup: {fileID: 0}
+  - name: Caught
+    clip: {fileID: 8300000, guid: 51e47fb49b3ff7946ac28cb2b0130d4a, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    sources: []
+    audioMixerGroup: {fileID: 0}
+  - name: Drop
+    clip: {fileID: 8300000, guid: 654d3cd45d0fe16478b267c7e1c10f7e, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    sources: []
+    audioMixerGroup: {fileID: 0}
+  - name: Wrong
+    clip: {fileID: 8300000, guid: 61f1ea0f60a01254b897ff6a700f53e3, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    sources: []
+    audioMixerGroup: {fileID: 0}

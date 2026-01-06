@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5062628c67f00414695a89cba01ea4fc, type: 3}
+  m_Name: LevelManagerConfiguration
+  m_EditorClassIdentifier: 
+  configuration:
+    foodPrefab:
+    - {fileID: 1177052116165940746, guid: 7d9d90fb25ae81042b6c93ef1c6d6709, type: 3}
+    minTimeInterval: 0
+    maxTimeInterval: 0

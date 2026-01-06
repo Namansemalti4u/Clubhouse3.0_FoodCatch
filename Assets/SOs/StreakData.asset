@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c843f318a48121b4b97651d44244df8b, type: 3}
+  m_Name: StreakData
+  m_EditorClassIdentifier: 
+  streakType: 3
+  checkPoints:
+  - requiredLength: 1
+    multiplier: 2
+    multiplierDuration: 14
+    partitionLength: 14
+  - requiredLength: 1
+    multiplier: 3
+    multiplierDuration: 9
+    partitionLength: 9
+  - requiredLength: 1
+    multiplier: 5
+    multiplierDuration: 7
+    partitionLength: 7
+  streakProgressDecreaseRate: 1
+  initialStreakProgress: 0
+  initialMultiplierTimeState: 30
+  CanChangeVisualTextEffect: 0
+  position: {x: 0, y: 0, z: 0}
+  scale: 0

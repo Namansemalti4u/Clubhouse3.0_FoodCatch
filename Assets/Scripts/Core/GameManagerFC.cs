@@ -15,22 +15,18 @@ namespace Clubhouse.Games.FoodCatch.Core
             public LevelManagerConfiguration levelManagerConfiguration;
         }
 
-        public const string EDGE = "Edge";
-        public const string LAND = "Land";
-        public const string PERFECT = "Perfect";
-        public const string FAST_TAP_BONUS = "FastTapBonus";
-        public const string MISS = "Miss";
-        private static readonly List<string> ScoreTypes = new() { EDGE, LAND, PERFECT, FAST_TAP_BONUS, MISS };
+        public const string CAUGHT = "Caught";
+        public const string DROP = "Drop";
+        public const string WRONG = "Wrong";
+        private static readonly List<string> ScoreTypes = new() { CAUGHT, DROP, WRONG };
         #endregion
 
         #region Fields
         [Header("Game Specific Data")]
         [SerializeField] private Configuration configuration;
         [SerializeField] private LevelManager.Reference levelManagerReference;
-        private LevelManager levelManager;
         private VfxManager.VfxPlayParams vfxPlayParams;
-
-        [SerializeField] private Transform vfxPosition;
+        [SerializeField] private Transform VFXPosition;
         #endregion
 
         #region Unity Methods
@@ -40,7 +36,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         protected override void Awake()
         {
             base.Awake();
-            levelManager = new LevelManager(configuration.levelManagerConfiguration.configuration, levelManagerReference);
+            LevelManager.Instance.Init(configuration.levelManagerConfiguration.configuration, levelManagerReference);
         }
 
         public override void StartGame()
@@ -49,7 +45,7 @@ namespace Clubhouse.Games.FoodCatch.Core
             // Custom game start logic
             vfxPlayParams = new VfxManager.VfxPlayParams();
             {
-                vfxPlayParams.parent = vfxPosition.transform;
+                vfxPlayParams.parent = VFXPosition.transform;
             }
         }
         #endregion

@@ -1,20 +1,18 @@
+using Clubhouse.Games.Utilities;
+using Clubhouse.Helper;
 using System;
 using UnityEngine;
 using random = UnityEngine.Random;
 
-
 namespace Clubhouse.Games.FoodCatch.Core
 {
-    //using Gameplay;
-    public class LevelManager
+    public class LevelManager : Singleton<LevelManager>
     {
         [Serializable]
         public struct Configuration
         {
-            public GameObject foodPrefab;
-            public float minGap, maxGap;
-            public Sprite[] foodSprites;
-            public PolygonCollider2D[] collider2Ds;
+            public GameObject[] foodPrefab;
+            public float minTimeInterval, maxTimeInterval;
         }
 
         [Serializable]
@@ -27,42 +25,43 @@ namespace Clubhouse.Games.FoodCatch.Core
         private Configuration configuration;
         private Reference reference;
 
-        private readonly ObjectPoolManager<Food> pool;
-        private float currentPosition;
+        private ObjectPoolManager<Food>[] pool;
+        private SpawnRateManager spawnManager;
 
-        public LevelManager(Configuration a_configuration, Reference a_reference)
+        public void Init(Configuration a_configuration, Reference a_reference)
         {
             configuration = a_configuration;
             reference = a_reference;
-
-            pool = new ObjectPoolManager<Food>(configuration.foodPrefab.GetComponent<Food>(), reference.poolParent);
-
-            currentPosition = 1f;
-            CreateFood(currentPosition);
-            for (int i = 1; i <= 3; i++)
+            pool = new ObjectPoolManager<Food>[configuration.foodPrefab.Length];
+            for (int i = 0; i < configuration.foodPrefab.Length; i++)
             {
-                GenerateNextFood();
+                pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent, 5);
             }
+
+            // Create a spawn manager that spawns 12 items over 60 seconds
+            spawnManager = new SpawnRateManager(12, CreateFood, 60);
+            spawnManager.Enable();
         }
 
-        public void GenerateNextFood()
+        void Start()
         {
-            float gap = random.Range(configuration.minGap, configuration.maxGap);
-            currentPosition += gap;
-            CreateFood(currentPosition);
+           
         }
 
-        public Food CreateFood(float a_position)
+        void Update()
         {
-            var food = pool.Get(reference.envParent);
-            int index = random.Range(0, configuration.foodSprites.Length);
-            food.Init(a_position, configuration.foodSprites[index], configuration.collider2Ds[index]);
-            return food;
+            spawnManager.Update(Time.deltaTime);
+        }
+
+        private void CreateFood()
+        {
+            var food = pool[0].Get(reference.envParent);
+            //food.Init(0, configuration.foodSprites[index], configuration.collider2Ds[index]);
         }
 
         public void Despawn(Food food)
         {
-            pool.Return(food);
+            pool[0].Return(food);
         }
     }
 }
