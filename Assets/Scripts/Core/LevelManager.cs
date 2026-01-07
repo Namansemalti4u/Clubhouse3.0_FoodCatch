@@ -39,7 +39,6 @@ namespace Clubhouse.Games.FoodCatch.Core
             {
                 pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent, 5);
             }
-
             // Create a spawn manager that spawns 12 items over 60 seconds
             spawnManager = new SpawnRateManager(12, CreateFood, 60);
             spawnManager.Enable();
@@ -47,12 +46,17 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         void Start()
         {
-           
+            
         }
 
         void Update()
         {
             spawnManager.Update(Time.deltaTime);
+        }
+
+        void OnDisable()
+        {
+            spawnManager.Disable();
         }
 
         private void CreateFood()

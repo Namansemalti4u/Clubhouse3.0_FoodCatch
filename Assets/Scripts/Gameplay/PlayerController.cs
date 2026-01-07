@@ -1,8 +1,8 @@
+using Clubhouse.Games.FoodCatch.Core;
 using UnityEngine;
 
 namespace Clubhouse.Games.FoodCatch.Gameplay
 {
-    [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerController : Helper.Singleton<PlayerController>
     {
         [SerializeField]
@@ -20,7 +20,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         }
 
         // Update is called once per frame
-        void Update()
+        void LateUpdate()
         {
             TouchHandling();
         }

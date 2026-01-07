@@ -36,22 +36,28 @@ namespace Clubhouse.Games.FoodCatch.Core
         protected override void Awake()
         {
             base.Awake();
-            LevelManager.Instance.Init(configuration.levelManagerConfiguration.configuration, levelManagerReference);
         }
 
         public override void StartGame()
         {
             base.StartGame();
+            LevelManager.Instance.Init(configuration.levelManagerConfiguration.configuration, levelManagerReference);
             // Custom game start logic
             vfxPlayParams = new VfxManager.VfxPlayParams();
             {
                 vfxPlayParams.parent = VFXPosition.transform;
             }
         }
+
+        public override void GameOver()
+        {
+            base.GameOver();
+            //LevelManager.Instance.enabled = false;
+        }
         #endregion
 
         #region GamePlay Management
-        
-        #endregion    
+
+        #endregion
     }
 }
