@@ -2,7 +2,6 @@ using Clubhouse.Games.Utilities;
 using Clubhouse.Helper;
 using System;
 using UnityEngine;
-using random = UnityEngine.Random;
 
 namespace Clubhouse.Games.FoodCatch.Core
 {
@@ -12,7 +11,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         public struct Configuration
         {
             public GameObject[] foodPrefab;
-            public float minTimeInterval, maxTimeInterval;
+            public int spawnCount;
         }
 
         [Serializable]
@@ -27,6 +26,7 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private ObjectPoolManager<Food>[] pool;
         private SpawnRateManager spawnManager;
+        private NumberPool foodNumberPool;
 
         [SerializeField] private Transform spawnPoint;
 
@@ -39,14 +39,17 @@ namespace Clubhouse.Games.FoodCatch.Core
             {
                 pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent, 5);
             }
-            // Create a spawn manager that spawns 12 items over 60 seconds
-            spawnManager = new SpawnRateManager(12, CreateFood, 60);
+            // Create a spawn manager that spawns given number of items over 60 seconds
+            spawnManager = new SpawnRateManager(configuration.spawnCount, CreateFood, 60);
             spawnManager.Enable();
+
+            // Create Numberpool of food items with spawn count length.
+            foodNumberPool = new NumberPool(0, configuration.foodPrefab.Length - 1);
         }
 
         void Start()
         {
-            
+
         }
 
         void Update()
@@ -61,14 +64,14 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private void CreateFood()
         {
-            var food = pool[0].Get(reference.envParent);
+            var food = pool[foodNumberPool.GetRandom()].Get(reference.envParent);
             food.transform.position = spawnPoint.position;
             food.Init();
         }
 
         public void Despawn(Food food)
         {
-            pool[0].Return(food);
+            pool[(int)food.foodType].Return(food);
         }
     }
 }
