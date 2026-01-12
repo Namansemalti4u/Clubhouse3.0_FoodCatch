@@ -12,6 +12,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         {
             public GameObject[] foodPrefab;
             public int spawnCount;
+            public float edibleRatio;
         }
 
         [Serializable]
@@ -26,7 +27,6 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private ObjectPoolManager<Food>[] pool;
         private SpawnRateManager spawnManager;
-        private NumberPool foodNumberPool;
 
         [SerializeField] private Transform spawnPoint;
 
@@ -35,16 +35,13 @@ namespace Clubhouse.Games.FoodCatch.Core
             configuration = a_configuration;
             reference = a_reference;
             pool = new ObjectPoolManager<Food>[configuration.foodPrefab.Length];
-            for (int i = 0; i < configuration.foodPrefab.Length; i++)
+            for (int i = 0; i < pool.Length; i++)
             {
-                pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent, 5);
+                pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent);
             }
-            // Create a spawn manager that spawns given number of items over 60 seconds
-            spawnManager = new SpawnRateManager(configuration.spawnCount, CreateFood, 60);
+            // Create a spawn manager that spawns given number of items over 55 seconds
+            spawnManager = new SpawnRateManager(configuration.spawnCount, CreateFood, 55);
             spawnManager.Enable();
-
-            // Create Numberpool of food items with spawn count length.
-            foodNumberPool = new NumberPool(0, configuration.foodPrefab.Length - 1);
         }
 
         void Start()
@@ -64,7 +61,9 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private void CreateFood()
         {
-            var food = pool[foodNumberPool.GetRandom()].Get(reference.envParent);
+            bool spawnEdible = UnityEngine.Random.value <= configuration.edibleRatio;
+            int index = (int)(spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible);
+            var food = pool[index].Get(reference.envParent);
             food.transform.position = spawnPoint.position;
             food.Init();
         }

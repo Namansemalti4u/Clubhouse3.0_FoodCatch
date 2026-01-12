@@ -1,5 +1,5 @@
-using Clubhouse.Games.FoodCatch.Core;
 using UnityEngine;
+using static Food;
 
 namespace Clubhouse.Games.FoodCatch.Gameplay
 {
