@@ -28,7 +28,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         private ObjectPoolManager<Food>[] pool;
         private SpawnRateManager spawnManager;
 
-        [SerializeField] private Transform spawnPoint;
+        public Transform spawnPoint, safePoint;
 
         public void Init(Configuration a_configuration, Reference a_reference)
         {

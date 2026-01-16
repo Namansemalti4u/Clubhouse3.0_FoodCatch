@@ -1,15 +1,16 @@
 using Clubhouse.Games.Common;
 using Clubhouse.Games.FoodCatch.Core;
+using Clubhouse.Games.FoodCatch.Gameplay;
 using UnityEngine;
 
 public class Food : MonoBehaviour
 {
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Timer despawnTimer;
 
     [SerializeField]
-    float forceX, forceY;
+    Vector2 force;
 
     public FoodType foodType;
     public enum FoodType
@@ -52,9 +53,8 @@ public class Food : MonoBehaviour
     {
         // Force calculation for forward jump motion.
         rb.constraints = RigidbodyConstraints2D.None;
-        forceX = Random.Range(1, 2.5f);
-        forceY = Random.Range(4, 4.5f);
-        BounceOffFromPlayer(new Vector2(forceX, forceY));
+        force.Set(Random.Range(1, 2.5f), Random.Range(4, 4.5f));
+        BounceOffFromPlayer();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -76,10 +76,11 @@ public class Food : MonoBehaviour
                 {
                     case FoodType.Edible:
                         {
-                            float forceX = Random.Range(1f, 2f);
-                            float forceY = 4.5f;
-                            var bounceForce = new Vector2(forceX, forceY);
-                            BounceOffFromPlayer(bounceForce);
+                            // Check if contact with player was at the edge of its collider
+                            Bounds collBounds = collider.bounds;
+                            bool onEdge = transform.position.x >= collBounds.max.x - 0.1f;
+                            force = collider.gameObject.GetComponent<PlayerController>().LaunchFood(this, onEdge);
+                            BounceOffFromPlayer();
                             break;
                         }
                     case FoodType.Inedible:
@@ -92,12 +93,11 @@ public class Food : MonoBehaviour
         }
     }
 
-    public void BounceOffFromPlayer(Vector2 bounceForce)
+    public void BounceOffFromPlayer()
     {
-        forceX = bounceForce.x;
-        forceY = bounceForce.y;
         rb.linearVelocity = Vector2.zero;
-        rb.AddForce(bounceForce, ForceMode2D.Impulse);
+        Debug.Log($"Applying force: {force}");
+        rb.AddForce(force, ForceMode2D.Impulse);
     }
 
     private void Stop()
