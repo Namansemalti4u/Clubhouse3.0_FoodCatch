@@ -49,12 +49,16 @@ public class Food : MonoBehaviour
     /// <summary>
     /// Method for object pooling initialization
     /// </summary>
-    public void Init()
+    public void Init(Vector3 position, Sprite foodSprite)
     {
+        transform.position = position;
+        transform.GetComponent<SpriteRenderer>().sprite = foodSprite;
+
         // Force calculation for forward jump motion.
         rb.constraints = RigidbodyConstraints2D.None;
-        force.Set(Random.Range(1, 2.5f), Random.Range(4, 4.5f));
+        force.Set(1.25f, 4.5f);
         BounceOffFromPlayer();
+        rb.angularVelocity = -Random.Range(75, 100);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -63,12 +67,11 @@ public class Food : MonoBehaviour
         {
             case "Ground":
                 Stop();
-                Debug.Log("Food dropped!");
                 GameManagerFC.Instance.AddScore(GameManagerFC.DROP);
                 break;
             case "Finish":
-                Stop();
-                Debug.Log("Food saved!");
+                rb.linearVelocity = Vector2.zero;
+                StartCoroutine(MoveToTarget());
                 GameManagerFC.Instance.AddScore(GameManagerFC.CAUGHT);
                 break;
             case "Player":
@@ -84,13 +87,26 @@ public class Food : MonoBehaviour
                             break;
                         }
                     case FoodType.Inedible:
-                        GameManagerFC.Instance.AddScore(GameManagerFC.WRONG);
-                        despawnTimer.Enable();
-                        Debug.Log("Inedible food caught!");
+                        if (rb.linearVelocity != Vector2.zero)
+                        {
+                            GameManagerFC.Instance.AddScore(GameManagerFC.WRONG);
+                            despawnTimer.Enable();
+                            Debug.Log("Inedible food caught!");
+                        }
                         break;
                 }
                 break;
         }
+    }
+
+    System.Collections.IEnumerator MoveToTarget()
+    {
+        while (Vector2.Distance(transform.position, LevelManager.Instance.safePoint.position) > 0.1f)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, LevelManager.Instance.safePoint.position, 5 * Time.deltaTime);
+            yield return null;
+        }
+        Stop();
     }
 
     public void BounceOffFromPlayer()

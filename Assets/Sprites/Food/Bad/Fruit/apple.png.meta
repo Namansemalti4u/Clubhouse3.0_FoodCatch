@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 516136a73cc6afa43a27495c817622ec
+guid: dba1a31d0a78fb64a88c3e805aa98e9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1045181238759104467
-    second: food_0
+      213: -7832214784768987486
+    second: apple_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: food_0
+      name: apple_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 633
+        width: 346
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d206cd17335ce71f0800000000000000
-      internalID: -1045181238759104467
+      spriteID: 2ae284d66226e4390800000000000000
+      internalID: -7832214784768987486
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      food_0: -1045181238759104467
+      apple_0: -7832214784768987486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

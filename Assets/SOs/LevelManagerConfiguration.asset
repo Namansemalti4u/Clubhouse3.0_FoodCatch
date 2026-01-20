@@ -18,3 +18,30 @@ MonoBehaviour:
     - {fileID: 8000662857914365122, guid: 87621ed5bd1f90e4bb3feb9e1475abd1, type: 3}
     spawnCount: 12
     edibleRatio: 0.75
+    edibles:
+    - {fileID: 21300000, guid: b6de422d2ea1bac4896284d05d7b13e2, type: 3}
+    - {fileID: 21300000, guid: 2b0653de0b436b043a897055ae165bbb, type: 3}
+    - {fileID: 21300000, guid: 9a35c74a2cbea92419dcd49a008cde58, type: 3}
+    - {fileID: 21300000, guid: ddebe794b6793a6499bbc49542849ec6, type: 3}
+    - {fileID: 21300000, guid: 14e7f9e1e5c6c164d90c3e9b1863e761, type: 3}
+    - {fileID: 21300000, guid: 83417292ae2f07340aca22c910645ab0, type: 3}
+    - {fileID: 21300000, guid: 2acd2af42862a7243ac9445b64b4068f, type: 3}
+    - {fileID: 21300000, guid: a6fc3031102fd304bbfb9932a1f61610, type: 3}
+    - {fileID: 21300000, guid: 7ed6ddd5440def447a70615f34240d91, type: 3}
+    - {fileID: 21300000, guid: 1ce2f3f227d3ce443a4ac675787a6150, type: 3}
+    - {fileID: 21300000, guid: 861b3cbc0239c314ab235e40fd19129c, type: 3}
+    - {fileID: 21300000, guid: fb90d455c7d40ed44879f3f27e18d3ab, type: 3}
+    - {fileID: 21300000, guid: 48a3186ccaaf2bd47a40c93e7a63ca3d, type: 3}
+    - {fileID: 21300000, guid: d85dd66aff537894d8f500b494eadf64, type: 3}
+    - {fileID: 21300000, guid: 568c0f967dc92a4489bd5fee5dfeb34b, type: 3}
+    - {fileID: 21300000, guid: c389031045132164d95e5c06cd12dd6d, type: 3}
+    - {fileID: 21300000, guid: c03fbf09a8fc87b4ab866ebfe5d2aeea, type: 3}
+    - {fileID: 21300000, guid: 396e18406b9747146a0af8d79e958f99, type: 3}
+    - {fileID: 21300000, guid: c2a3ba78e5a0c7848a8d9bf9606c95f1, type: 3}
+    inedibles:
+    - {fileID: 21300000, guid: dba1a31d0a78fb64a88c3e805aa98e9b, type: 3}
+    - {fileID: 21300000, guid: 0f0d9d0391759694c87dc6250591ed18, type: 3}
+    - {fileID: 21300000, guid: ed68d0041bd4ee9468cd3c02f6c56a6c, type: 3}
+    - {fileID: 21300000, guid: c4796cb2796c6ca4d980829034171d50, type: 3}
+    - {fileID: 21300000, guid: 0bb11d472b05fd14e92c87a554eab556, type: 3}
+    - {fileID: 21300000, guid: f9cdf42fd1ae8a44da8a3f6fff83bd7f, type: 3}

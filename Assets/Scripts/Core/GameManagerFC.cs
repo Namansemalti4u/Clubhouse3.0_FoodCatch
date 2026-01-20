@@ -11,14 +11,12 @@ namespace Clubhouse.Games.FoodCatch.Core
         [Serializable]
         public struct Configuration
         {
-            //public GameConfiguration gameConfiguration;
             public LevelManagerConfiguration levelManagerConfiguration;
         }
 
         public const string CAUGHT = "Caught";
         public const string DROP = "Drop";
         public const string WRONG = "Wrong";
-        private static readonly List<string> ScoreTypes = new() { CAUGHT, DROP, WRONG };
         #endregion
 
         #region Fields
@@ -30,14 +28,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         #endregion
 
         #region Unity Methods
-        /// <summary>
-        /// Initializes game components
-        /// </summary>
-        protected override void Awake()
-        {
-            base.Awake();
-        }
-
+        
         public override void StartGame()
         {
             base.StartGame();
@@ -48,16 +39,6 @@ namespace Clubhouse.Games.FoodCatch.Core
                 vfxPlayParams.parent = VFXPosition.transform;
             }
         }
-
-        public override void GameOver()
-        {
-            base.GameOver();
-            //LevelManager.Instance.enabled = false;
-        }
-        #endregion
-
-        #region GamePlay Management
-
         #endregion
     }
 }

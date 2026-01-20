@@ -45,9 +45,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         {
             Vector3 currentPosition = transform.position;
             currentPosition.x += GetSpeed() * multiplier * Time.deltaTime;
-            //Clamp x-axis in a range.
             currentPosition.x = Mathf.Clamp(currentPosition.x, -boundValue, boundValue);
-            //Change facing direction.
             spriteRenderer.flipX = multiplier == -1;
             transform.position = currentPosition;
         }
@@ -60,44 +58,33 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
 
         public Vector2 LaunchFood(Food food, bool onEdge)
         {
-            if (transform.position.x > 1 && onEdge || transform.position.x > 7)
+            if (CanBounceFromEdge(onEdge) || IsSafePointNear())
             {
                 Vector2 start = food.transform.position;
                 Vector2 target = LevelManager.Instance.safePoint.position;
-                float angle = 60;
-                float gravity = Mathf.Abs(Physics2D.gravity.y * food.rb.gravityScale);
-                Debug.Log($"Launch from right edge to safe point. Start: {start}, Target: {target}, Angle: {angle}, Gravity: {gravity}");
-                //return TargetVelocity(start, target, angle, gravity);
-                return CalculateImpulseForce(food.rb, start, target, angle);
+                float angle = 70;
+                var frce = CalculateImpulseForce(food.rb, start, target, angle);
+                Debug.Log("Calc Force Applied: " + frce);
+                return frce;
             }
 
-            return new Vector2(Random.Range(1f, 2f), 4.5f);
+            return new Vector2(1.25f, 4.5f);
+            //return new Vector2(Random.Range(1f, 2f), 4.5f);
         }
 
-        private Vector2 TargetVelocity(Vector2 start, Vector2 target, float angleDegrees, float gravity)
+        private bool IsSafePointNear()
         {
-            float theta = angleDegrees * Mathf.Deg2Rad;
+            return transform.position.x > boundValue * 0.8f;
+        }
 
-            float D = target.x - start.x;
-            float H = target.y - start.y;
-
-            float cos = Mathf.Cos(theta);
-            float tan = Mathf.Tan(theta);
-
-            float numerator = gravity * D * D;
-            float denominator = 2f * cos * cos * (D * tan - H);
-            float r = Mathf.Sqrt(numerator / denominator);
-
-            float vx = r * cos;
-            float vy = r * Mathf.Sin(theta);
-
-            return new Vector2(vx, vy);
+        private bool CanBounceFromEdge(bool onEdge)
+        {
+            return (onEdge && transform.position.x > boundValue * 0.1f);
         }
 
         public static Vector2 CalculateImpulseForce(Rigidbody2D rb, Vector2 start, Vector2 target, float angleDegrees)
         {
-            float gravity = -Physics2D.gravity.y;
-
+            float gravity = Mathf.Abs(Physics2D.gravity.y * rb.gravityScale);
             float theta = angleDegrees * Mathf.Deg2Rad;
 
             float D = target.x - start.x;
@@ -106,20 +93,9 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
             float cos = Mathf.Cos(theta);
             float tan = Mathf.Tan(theta);
 
-            float speed = Mathf.Sqrt(
-                (gravity * D * D) /
-                (2f * cos * cos * (D * tan - H))
-            );
-
-            Vector2 velocity = new Vector2(
-                speed * cos,
-                speed * Mathf.Sin(theta)
-            );
-
-            // Impulse = mass * velocity
+            float speed = Mathf.Sqrt((gravity * D * D) / (2f * cos * cos * (D * tan - H)));
+            Vector2 velocity = new(speed * cos, speed * Mathf.Sin(theta));
             return rb.mass * velocity;
         }
-
-
     }
 }

@@ -2,6 +2,7 @@ using Clubhouse.Games.Utilities;
 using Clubhouse.Helper;
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Clubhouse.Games.FoodCatch.Core
 {
@@ -13,6 +14,7 @@ namespace Clubhouse.Games.FoodCatch.Core
             public GameObject[] foodPrefab;
             public int spawnCount;
             public float edibleRatio;
+            public Sprite[] edibles, inedibles;
         }
 
         [Serializable]
@@ -22,7 +24,7 @@ namespace Clubhouse.Games.FoodCatch.Core
             public Transform poolParent;
         }
 
-        private Configuration configuration;
+        private Configuration config;
         private Reference reference;
 
         private ObjectPoolManager<Food>[] pool;
@@ -30,17 +32,17 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         public Transform spawnPoint, safePoint;
 
-        public void Init(Configuration a_configuration, Reference a_reference)
+        public void Init(Configuration configuration, Reference a_ref)
         {
-            configuration = a_configuration;
-            reference = a_reference;
-            pool = new ObjectPoolManager<Food>[configuration.foodPrefab.Length];
+            config = configuration;
+            reference = a_ref;
+            pool = new ObjectPoolManager<Food>[config.foodPrefab.Length];
             for (int i = 0; i < pool.Length; i++)
             {
-                pool[i] = new ObjectPoolManager<Food>(configuration.foodPrefab[i].GetComponent<Food>(), reference.poolParent);
+                pool[i] = new ObjectPoolManager<Food>(config.foodPrefab[i].GetComponent<Food>(), reference.poolParent);
             }
             // Create a spawn manager that spawns given number of items over 55 seconds
-            spawnManager = new SpawnRateManager(configuration.spawnCount, CreateFood, 55);
+            spawnManager = new SpawnRateManager(config.spawnCount, CreateFood, 55);
             spawnManager.Enable();
         }
 
@@ -61,11 +63,11 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private void CreateFood()
         {
-            bool spawnEdible = UnityEngine.Random.value <= configuration.edibleRatio;
+            bool spawnEdible = Random.value <= config.edibleRatio;
             int index = (int)(spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible);
             var food = pool[index].Get(reference.envParent);
-            food.transform.position = spawnPoint.position;
-            food.Init();
+            var foodSprite = spawnEdible ? config.edibles[Random.Range(0, config.edibles.Length)] : config.inedibles[Random.Range(0, config.inedibles.Length)];
+            food.Init(spawnPoint.position, foodSprite);
         }
 
         public void Despawn(Food food)

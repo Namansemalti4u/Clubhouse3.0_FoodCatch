@@ -872,7 +872,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.13, y: 1.82}
+  m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
 --- !u!212 &1775953517
 SpriteRenderer:
@@ -1005,10 +1005,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1154937107}
     m_Modifications:
-    - target: {fileID: 1222893692622258336, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 3482022744227315435, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
       propertyPath: m_Name
       value: Player
