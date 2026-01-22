@@ -1,3 +1,4 @@
+using Clubhouse.Games.Gameplay;
 using Clubhouse.Games.Utilities;
 using Clubhouse.Helper;
 using System;
@@ -28,7 +29,6 @@ namespace Clubhouse.Games.FoodCatch.Core
         private Reference reference;
 
         private ObjectPoolManager<Food>[] pool;
-        private SpawnRateManager spawnManager;
 
         public Transform spawnPoint, safePoint;
 
@@ -41,27 +41,10 @@ namespace Clubhouse.Games.FoodCatch.Core
             {
                 pool[i] = new ObjectPoolManager<Food>(config.foodPrefab[i].GetComponent<Food>(), reference.poolParent);
             }
-            // Create a spawn manager that spawns given number of items over 55 seconds
-            spawnManager = new SpawnRateManager(config.spawnCount, CreateFood, 55);
-            spawnManager.Enable();
+
+            spawnPoint.gameObject.GetComponent<SpawnManager>().Init(config.spawnCount, CreateFood);
         }
-
-        void Start()
-        {
-
-        }
-
-        void Update()
-        {
-            spawnManager.Update(Time.deltaTime);
-        }
-
-        void OnDisable()
-        {
-            spawnManager.Disable();
-        }
-
-        private void CreateFood()
+        public void CreateFood()
         {
             bool spawnEdible = Random.value <= config.edibleRatio;
             int index = (int)(spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible);

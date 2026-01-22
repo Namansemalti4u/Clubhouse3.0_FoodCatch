@@ -1,6 +1,4 @@
 using Clubhouse.Tools.VisualEffects;
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Clubhouse.Games.FoodCatch.Core
@@ -8,7 +6,7 @@ namespace Clubhouse.Games.FoodCatch.Core
     public class GameManagerFC : Common.GameManager<GameManagerFC>
     {
         #region Data Structures
-        [Serializable]
+        [System.Serializable]
         public struct Configuration
         {
             public LevelManagerConfiguration levelManagerConfiguration;
@@ -28,7 +26,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         #endregion
 
         #region Unity Methods
-        
+
         public override void StartGame()
         {
             base.StartGame();
@@ -36,8 +34,33 @@ namespace Clubhouse.Games.FoodCatch.Core
             // Custom game start logic
             vfxPlayParams = new VfxManager.VfxPlayParams();
             {
-                vfxPlayParams.parent = VFXPosition.transform;
+                vfxPlayParams.parent = VFXPosition;
             }
+        }
+        #endregion
+
+        #region Score Management
+        public void AddScore(string scoreType)
+        {
+            TextEffectType textType;
+            switch (scoreType)
+            {
+                case CAUGHT:
+                    HapticManager.Instance.PlayHaptic(HapticType.OnCorrect);
+                    textType = Random.value < 0.5f ? TextEffectType.Nice : TextEffectType.Amazing;
+                    break;
+                case DROP:
+                    HapticManager.Instance.PlayHaptic(HapticType.OnWrong);
+                    textType = TextEffectType.Miss;
+                    break;
+                default:
+                    HapticManager.Instance.PlayHaptic(HapticType.OnWrong);
+                    textType = TextEffectType.Type2;
+                    break;
+            }
+            VfxManager.Instance.ShowTextEffect(textType, scoreType, 0, vfxPlayParams);
+            VfxManager.Instance.ShowScoreEffect(base.AddScore(scoreType), VFXPosition);
+            AudioManager.Instance.Play(scoreType);
         }
         #endregion
     }

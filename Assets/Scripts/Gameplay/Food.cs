@@ -22,6 +22,11 @@ public class Food : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        SetDespawnTimer();
+    }
+
+    private void SetDespawnTimer()
+    {
         if (despawnTimer == null)
             despawnTimer = new Timer(2, Despawn);
         else
@@ -53,11 +58,11 @@ public class Food : MonoBehaviour
     {
         transform.position = position;
         transform.GetComponent<SpriteRenderer>().sprite = foodSprite;
+        despawnTimer.ResetTimer();
 
         // Force calculation for forward jump motion.
         rb.constraints = RigidbodyConstraints2D.None;
-        force.Set(1.25f, 4.5f);
-        BounceOffFromPlayer();
+        BounceOffFromPlayer(Random.Range(0.6f, 1.25f), 4.5f);
         rb.angularVelocity = -Random.Range(75, 100);
     }
 
@@ -67,7 +72,8 @@ public class Food : MonoBehaviour
         {
             case "Ground":
                 Stop();
-                GameManagerFC.Instance.AddScore(GameManagerFC.DROP);
+                if (foodType == FoodType.Edible)
+                    GameManagerFC.Instance.AddScore(GameManagerFC.DROP);
                 break;
             case "Finish":
                 rb.linearVelocity = Vector2.zero;
@@ -83,7 +89,7 @@ public class Food : MonoBehaviour
                             Bounds collBounds = collider.bounds;
                             bool onEdge = transform.position.x >= collBounds.max.x - 0.1f;
                             force = collider.gameObject.GetComponent<PlayerController>().LaunchFood(this, onEdge);
-                            BounceOffFromPlayer();
+                            BounceOffFromPlayer(force.x, force.y);
                             break;
                         }
                     case FoodType.Inedible:
@@ -91,7 +97,6 @@ public class Food : MonoBehaviour
                         {
                             GameManagerFC.Instance.AddScore(GameManagerFC.WRONG);
                             despawnTimer.Enable();
-                            Debug.Log("Inedible food caught!");
                         }
                         break;
                 }
@@ -109,10 +114,10 @@ public class Food : MonoBehaviour
         Stop();
     }
 
-    public void BounceOffFromPlayer()
+    public void BounceOffFromPlayer(float x, float y)
     {
         rb.linearVelocity = Vector2.zero;
-        Debug.Log($"Applying force: {force}");
+        force.Set(x, y);
         rb.AddForce(force, ForceMode2D.Impulse);
     }
 

@@ -63,9 +63,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
                 Vector2 start = food.transform.position;
                 Vector2 target = LevelManager.Instance.safePoint.position;
                 float angle = 70;
-                var frce = CalculateImpulseForce(food.rb, start, target, angle);
-                Debug.Log("Calc Force Applied: " + frce);
-                return frce;
+                return CalculateImpulseForce(food.rb, start, target, angle);
             }
 
             return new Vector2(1.25f, 4.5f);

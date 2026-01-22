@@ -16,7 +16,7 @@ MonoBehaviour:
     foodPrefab:
     - {fileID: 1177052116165940746, guid: 7d9d90fb25ae81042b6c93ef1c6d6709, type: 3}
     - {fileID: 8000662857914365122, guid: 87621ed5bd1f90e4bb3feb9e1475abd1, type: 3}
-    spawnCount: 12
+    spawnCount: 4
     edibleRatio: 0.75
     edibles:
     - {fileID: 21300000, guid: b6de422d2ea1bac4896284d05d7b13e2, type: 3}

@@ -19,7 +19,7 @@ MonoBehaviour:
       scoreType: 1
       executionMode: 0
       progressionType: 0
-      affectsStreak: 0
+      affectsStreak: 1
       isMultiple: 0
       increaseInFactor: 0
       reward: 10
@@ -36,7 +36,7 @@ MonoBehaviour:
       isMultiple: 0
       increaseInFactor: 0
       reward: 10
-      penalty: -10
+      penalty: 10
       incrementAmount: 0
       decrementAmount: 0
       rewards: []
@@ -49,7 +49,7 @@ MonoBehaviour:
       isMultiple: 0
       increaseInFactor: 0
       reward: 10
-      penalty: -5
+      penalty: 5
       incrementAmount: 0
       decrementAmount: 0
       rewards: []
