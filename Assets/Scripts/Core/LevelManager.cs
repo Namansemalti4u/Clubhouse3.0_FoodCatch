@@ -30,7 +30,9 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         private ObjectPoolManager<Food>[] pool;
 
-        public Transform spawnPoint, safePoint;
+        public Transform safePoint;
+        [SerializeField] private Transform spawnPoint;
+        [SerializeField] private SpawnManager spawnManager;
 
         public void Init(Configuration configuration, Reference a_ref)
         {
@@ -42,8 +44,9 @@ namespace Clubhouse.Games.FoodCatch.Core
                 pool[i] = new ObjectPoolManager<Food>(config.foodPrefab[i].GetComponent<Food>(), reference.poolParent);
             }
 
-            spawnPoint.gameObject.GetComponent<SpawnManager>().Init(config.spawnCount, CreateFood);
+            spawnManager.Init(config.spawnCount, CreateFood);
         }
+
         public void CreateFood()
         {
             bool spawnEdible = Random.value <= config.edibleRatio;

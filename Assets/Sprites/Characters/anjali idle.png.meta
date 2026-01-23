@@ -187,7 +187,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3240
+        y: 5400
         width: 1080
         height: 1080
       alignment: 0
@@ -209,7 +209,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1080
-        y: 3240
+        y: 5400
         width: 1080
         height: 1080
       alignment: 0
@@ -231,7 +231,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2160
-        y: 3240
+        y: 5400
         width: 1080
         height: 1080
       alignment: 0
@@ -253,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3240
-        y: 3240
+        y: 5400
         width: 1080
         height: 1080
       alignment: 0
@@ -275,7 +275,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4320
-        y: 3240
+        y: 5400
         width: 1080
         height: 1080
       alignment: 0
@@ -297,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2160
+        y: 4320
         width: 1080
         height: 1080
       alignment: 0
@@ -319,7 +319,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1080
-        y: 2160
+        y: 4320
         width: 1080
         height: 1080
       alignment: 0
@@ -341,7 +341,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2160
-        y: 2160
+        y: 4320
         width: 1080
         height: 1080
       alignment: 0
@@ -363,7 +363,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3240
-        y: 2160
+        y: 4320
         width: 1080
         height: 1080
       alignment: 0
@@ -385,7 +385,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4320
-        y: 2160
+        y: 4320
         width: 1080
         height: 1080
       alignment: 0
@@ -407,7 +407,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1080
+        y: 3240
         width: 1080
         height: 1080
       alignment: 0
@@ -429,7 +429,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1080
-        y: 1080
+        y: 3240
         width: 1080
         height: 1080
       alignment: 0
@@ -451,7 +451,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2160
-        y: 1080
+        y: 3240
         width: 1080
         height: 1080
       alignment: 0
@@ -473,7 +473,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3240
-        y: 1080
+        y: 3240
         width: 1080
         height: 1080
       alignment: 0
@@ -495,7 +495,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4320
-        y: 1080
+        y: 3240
         width: 1080
         height: 1080
       alignment: 0
@@ -517,7 +517,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2160
         width: 1080
         height: 1080
       alignment: 0
@@ -539,7 +539,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1080
-        y: 0
+        y: 2160
         width: 1080
         height: 1080
       alignment: 0
@@ -561,7 +561,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2160
-        y: 0
+        y: 2160
         width: 1080
         height: 1080
       alignment: 0
@@ -583,7 +583,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3240
-        y: 0
+        y: 2160
         width: 1080
         height: 1080
       alignment: 0
@@ -605,7 +605,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4320
-        y: 0
+        y: 2160
         width: 1080
         height: 1080
       alignment: 0
@@ -618,6 +618,226 @@ TextureImporter:
       bones: []
       spriteID: 0da3cceabe0543160800000000000000
       internalID: 7004312293648120528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a61475081077b245a2ddb01bf86c90b
+      internalID: -1415417334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_21
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1080
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76beb89c0effd934f8e8511d5ecaeffa
+      internalID: 89161653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_22
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1080
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ac3e8ed918f2b4bad3a15e62ec222a
+      internalID: -1783352760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_23
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 1080
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41967b7e6da1cfc478fcf6f43a5273e3
+      internalID: 1454566506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_24
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1080
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d57709c02456d14ba5fd07fa64b6256
+      internalID: 22380291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2d6c05d2645944d8206fb7bf992c31
+      internalID: -510333183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_26
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8650dbf0dba9e1d4db65a27e7e0e1605
+      internalID: 656381499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_27
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0140cbd7a3e15a24c91258bc7682c311
+      internalID: -80520191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_28
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474f7048e1ce36544a1d339510d37d2a
+      internalID: 386311199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anjali idle_29
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 1080
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cceb3923d227104c8287ac8db7b5083
+      internalID: 358010303
       vertices: []
       indices: 
       edges: []
@@ -649,6 +869,16 @@ TextureImporter:
       anjali idle_18: -3099362099083382400
       anjali idle_19: 7004312293648120528
       anjali idle_2: 7561262879508748374
+      anjali idle_20: -1415417334
+      anjali idle_21: 89161653
+      anjali idle_22: -1783352760
+      anjali idle_23: 1454566506
+      anjali idle_24: 22380291
+      anjali idle_25: -510333183
+      anjali idle_26: 656381499
+      anjali idle_27: -80520191
+      anjali idle_28: 386311199
+      anjali idle_29: 358010303
       anjali idle_3: -1584648660815037564
       anjali idle_4: -146670129393055852
       anjali idle_5: -3713312246032781041

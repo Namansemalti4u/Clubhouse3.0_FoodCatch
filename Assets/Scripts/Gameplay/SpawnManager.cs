@@ -1,21 +1,22 @@
 using Clubhouse.Games.Common;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Clubhouse.Games.Gameplay
 {
     public class SpawnManager : MonoBehaviour
     {
-        private System.Action OnComplete;
-        [SerializeField] private int spawnCount, maxExCount;
-        [SerializeField] private float interval = 0.5f;
+        private System.Action spawnEvent;
+        private int spawnCount, maxExCount;
+        [SerializeField] private float interval, spawnDelay;
         private Timer spawnTimer;
-
-        public void Init(int maxCount, System.Action onComplete)
+        private Animator animator;
+        public void Init(int maxCount, System.Action spawnAction)
         {
-            OnComplete = onComplete;
+            spawnEvent = spawnAction;
             maxExCount = maxCount + 1;
             spawnCount = Random.Range(1, maxExCount);
-            spawnTimer = new Timer(interval, OnTimerComplete);
+            spawnTimer = new Timer(interval, PlayThrowAnim);
             StartSpawning();
         }
 
@@ -25,23 +26,33 @@ namespace Clubhouse.Games.Gameplay
             spawnTimer.Enable();
         }
 
-        // Update is called once per frame
-        void Update()
+        void PlayThrowAnim()
         {
-            spawnTimer?.Update(Time.deltaTime);
-        }
-
-        public void OnTimerComplete()
-        {
+            animator.Play("Throw");
             if (--spawnCount > 0)
                 spawnTimer.ResetTimer();
             else
             {
                 spawnTimer.Disable();
                 spawnCount = Random.Range(1, maxExCount);
-                Invoke(nameof(StartSpawning), 5);
+                Invoke(nameof(StartSpawning), spawnDelay);
             }
-            OnComplete?.Invoke();
+        }
+
+        public void OnThrowEvent()
+        {
+            spawnEvent?.Invoke();
+        }
+
+        void Start()
+        {
+            animator = GetComponent<Animator>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            spawnTimer?.Update(Time.deltaTime);
         }
     }
 }

@@ -1,4 +1,5 @@
 using Clubhouse.Games.FoodCatch.Core;
+using UnityEditor.Animations;
 using UnityEngine;
 using static Food;
 
@@ -6,9 +7,12 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
 {
     public class PlayerController : Helper.Singleton<PlayerController>
     {
+        private const string IsMoving = "isMoving";
+
         [SerializeField]
         private float maxSpeed, boundValue;
         private SpriteRenderer spriteRenderer;
+        private Animator animController;
 
         private float currentSpeed;
         private float lerpRate;
@@ -16,7 +20,8 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            spriteRenderer = transform.GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            animController = GetComponent<Animator>();
             lerpRate = 0.1f;
         }
 
@@ -33,10 +38,12 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
             {
                 Touch touch = Input.GetTouch(0);
                 MovementLogic(touch.position.x < Screen.width / 2 ? -1 : 1);
+                animController.SetBool(IsMoving, true);
             }
             else
             {
                 currentSpeed = 0f;
+                animController.SetBool(IsMoving, false);
             }
         }
         #endregion
@@ -46,7 +53,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
             Vector3 currentPosition = transform.position;
             currentPosition.x += GetSpeed() * multiplier * Time.deltaTime;
             currentPosition.x = Mathf.Clamp(currentPosition.x, -boundValue, boundValue);
-            spriteRenderer.flipX = multiplier == -1;
+            transform.localScale = new Vector3(multiplier == -1 ? 1 : -1, 1, 1);
             transform.position = currentPosition;
         }
 
@@ -65,9 +72,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
                 float angle = 70;
                 return CalculateImpulseForce(food.rb, start, target, angle);
             }
-
             return new Vector2(1.25f, 4.5f);
-            //return new Vector2(Random.Range(1f, 2f), 4.5f);
         }
 
         private bool IsSafePointNear()
