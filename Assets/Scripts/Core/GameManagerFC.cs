@@ -40,7 +40,7 @@ namespace Clubhouse.Games.FoodCatch.Core
         #endregion
 
         #region Score Management
-        public void AddScore(string scoreType)
+        public void AddScore(string scoreType, Transform scoreTransform)
         {
             TextEffectType textType;
             switch (scoreType)
@@ -59,7 +59,7 @@ namespace Clubhouse.Games.FoodCatch.Core
                     break;
             }
             VfxManager.Instance.ShowTextEffect(textType, scoreType, 0, vfxPlayParams);
-            VfxManager.Instance.ShowScoreEffect(base.AddScore(scoreType), VFXPosition);
+            VfxManager.Instance.ShowScoreEffect(AddScore(scoreType), scoreTransform);
             AudioManager.Instance.Play(scoreType);
         }
         #endregion

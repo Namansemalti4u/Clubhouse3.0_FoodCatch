@@ -1,7 +1,5 @@
 using Clubhouse.Games.FoodCatch.Core;
-using UnityEditor.Animations;
 using UnityEngine;
-using static Food;
 
 namespace Clubhouse.Games.FoodCatch.Gameplay
 {
@@ -11,7 +9,6 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
 
         [SerializeField]
         private float maxSpeed, boundValue;
-        private SpriteRenderer spriteRenderer;
         private Animator animController;
 
         private float currentSpeed;
@@ -20,7 +17,6 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
             animController = GetComponent<Animator>();
             lerpRate = 0.1f;
         }
@@ -28,7 +24,20 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         // Update is called once per frame
         void LateUpdate()
         {
-            TouchHandling();
+#if UNITY_EDITOR
+            if (Input.GetKey(KeyCode.A))
+            {
+                MovementLogic(-1);
+                animController.SetBool(IsMoving, true);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                MovementLogic(1);
+                animController.SetBool(IsMoving, true);
+            }
+            else
+#endif
+                TouchHandling();
         }
 
         #region Touch Methods
@@ -67,6 +76,9 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         {
             if (CanBounceFromEdge(onEdge) || IsSafePointNear())
             {
+                // Coroutine to scale Food to half when bouncing off in 1.2 seconds.
+                StartCoroutine(ScaleOverTime(food, 0.7f, 1.2f));
+
                 Vector2 start = food.transform.position;
                 Vector2 target = LevelManager.Instance.safePoint.position;
                 float angle = 70;
@@ -75,9 +87,23 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
             return new Vector2(1.25f, 4.5f);
         }
 
+        private System.Collections.IEnumerator ScaleOverTime(Food food, float scale, float duration)
+        {
+            float currentTime = 0.0f;
+            Vector3 originalScale = food.transform.localScale;
+            Vector3 targetScale = Vector3.one * scale;
+            while (currentTime < duration)
+            {
+                food.transform.localScale = Vector3.Lerp(originalScale, targetScale, currentTime / duration);
+                currentTime += Time.deltaTime;
+                yield return null;
+            }
+            food.transform.localScale = targetScale;
+        }
+
         private bool IsSafePointNear()
         {
-            return transform.position.x > boundValue * 0.8f;
+            return transform.position.x > boundValue * 0.6f;
         }
 
         private bool CanBounceFromEdge(bool onEdge)

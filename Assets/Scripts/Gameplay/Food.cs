@@ -56,6 +56,7 @@ public class Food : MonoBehaviour
     /// </summary>
     public void Init(Vector3 position, Sprite foodSprite)
     {
+        transform.localScale = Vector3.one;
         transform.position = position;
         transform.GetComponent<SpriteRenderer>().sprite = foodSprite;
         despawnTimer.ResetTimer();
@@ -73,12 +74,12 @@ public class Food : MonoBehaviour
             case "Ground":
                 Stop();
                 if (foodType == FoodType.Edible)
-                    GameManagerFC.Instance.AddScore(GameManagerFC.DROP);
+                    GameManagerFC.Instance.AddScore(GameManagerFC.DROP, transform);
                 break;
             case "Finish":
                 rb.linearVelocity = Vector2.zero;
                 StartCoroutine(MoveToTarget());
-                GameManagerFC.Instance.AddScore(GameManagerFC.CAUGHT);
+                GameManagerFC.Instance.AddScore(GameManagerFC.CAUGHT, transform);
                 break;
             case "Player":
                 switch (foodType)
@@ -95,7 +96,7 @@ public class Food : MonoBehaviour
                     case FoodType.Inedible:
                         if (rb.linearVelocity != Vector2.zero)
                         {
-                            GameManagerFC.Instance.AddScore(GameManagerFC.WRONG);
+                            GameManagerFC.Instance.AddScore(GameManagerFC.WRONG, transform);
                             despawnTimer.Enable();
                         }
                         break;
