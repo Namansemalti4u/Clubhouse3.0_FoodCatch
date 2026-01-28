@@ -77,7 +77,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
             if (CanBounceFromEdge(onEdge) || IsSafePointNear())
             {
                 // Coroutine to scale Food to half when bouncing off in 1.2 seconds.
-                StartCoroutine(ScaleOverTime(food, 0.7f, 1.2f));
+                StartCoroutine(ScaleOverTime(food, 0.7f, 2));
 
                 Vector2 start = food.transform.position;
                 Vector2 target = LevelManager.Instance.safePoint.position;

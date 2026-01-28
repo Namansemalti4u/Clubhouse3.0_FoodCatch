@@ -1,5 +1,4 @@
 using Clubhouse.Games.Common;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace Clubhouse.Games.Gameplay
