@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   streakType: 3
   checkPoints:
-  - requiredLength: 1
+  - requiredLength: 3
     multiplier: 2
-    multiplierDuration: 14
-    partitionLength: 14
-  - requiredLength: 1
+    multiplierDuration: 5
+    partitionLength: 1
+  - requiredLength: 7
     multiplier: 3
-    multiplierDuration: 9
-    partitionLength: 9
-  - requiredLength: 1
+    multiplierDuration: 10
+    partitionLength: 1
+  - requiredLength: 12
     multiplier: 5
-    multiplierDuration: 7
-    partitionLength: 7
+    multiplierDuration: 15
+    partitionLength: 1
   streakProgressDecreaseRate: 1
   initialStreakProgress: 0
   initialMultiplierTimeState: 30

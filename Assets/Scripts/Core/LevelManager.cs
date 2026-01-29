@@ -60,5 +60,11 @@ namespace Clubhouse.Games.FoodCatch.Core
         {
             pool[(int)food.foodType].Return(food);
         }
+
+        private void OnDisable()
+        {
+            if (spawnManager != null)
+                spawnManager.enabled = false;
+        }
     }
 }

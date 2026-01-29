@@ -82,6 +82,7 @@ public class Food : MonoBehaviour
                 rb.linearVelocity = Vector2.zero;
                 StartCoroutine(MoveToTarget());
                 GameManagerFC.Instance.AddScore(GameManagerFC.CAUGHT, transform);
+                GameManagerFC.Instance.ResetStreakTimer();
                 break;
             case "Player":
                 switch (foodType)

@@ -48,8 +48,4 @@ MonoBehaviour:
     - {fileID: 5081960170942154188, guid: f78016a718f878d45aec1df690bed879, type: 3}
     - {fileID: -8503888190579239735, guid: f78016a718f878d45aec1df690bed879, type: 3}
     - {fileID: -4600632163539969005, guid: f78016a718f878d45aec1df690bed879, type: 3}
-    - {fileID: -5241497671879651280, guid: f78016a718f878d45aec1df690bed879, type: 3}
     - {fileID: -4429616873328161556, guid: f78016a718f878d45aec1df690bed879, type: 3}
-    safePoint: {fileID: 3679004554977412187, guid: ebfbb03f60b89b64988032d2d16be01d, type: 3}
-    spawnPoint: {fileID: 3010950846798145911, guid: b728ccf128cd78447aa276d8b1aff287, type: 3}
-    spawnManager: {fileID: 6214817969132021333, guid: e0eae9d26bfc1c24297fd0a7dcabafc8, type: 3}

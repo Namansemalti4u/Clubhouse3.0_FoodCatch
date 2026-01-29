@@ -1,3 +1,4 @@
+using Clubhouse.Games.Common;
 using Clubhouse.Tools.VisualEffects;
 using UnityEngine;
 
@@ -37,6 +38,12 @@ namespace Clubhouse.Games.FoodCatch.Core
                 vfxPlayParams.parent = VFXPosition;
             }
         }
+
+        public override void GameOver()
+        {
+            LevelManager.Instance.gameObject.SetActive(false);
+            base.GameOver();
+        }
         #endregion
 
         #region Score Management
@@ -47,7 +54,6 @@ namespace Clubhouse.Games.FoodCatch.Core
             {
                 case CAUGHT:
                     HapticManager.Instance.PlayHaptic(HapticType.OnCorrect);
-                    ResetStreakTimer();
                     textType = Random.value < 0.5f ? TextEffectType.Nice : TextEffectType.Amazing;
                     break;
                 case DROP:
