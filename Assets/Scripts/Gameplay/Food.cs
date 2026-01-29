@@ -75,6 +75,8 @@ public class Food : MonoBehaviour
                 Stop();
                 if (foodType == FoodType.Edible)
                     GameManagerFC.Instance.AddScore(GameManagerFC.DROP, transform);
+                else
+                    GameManagerFC.Instance.ResetStreakTimer();
                 break;
             case "Finish":
                 rb.linearVelocity = Vector2.zero;

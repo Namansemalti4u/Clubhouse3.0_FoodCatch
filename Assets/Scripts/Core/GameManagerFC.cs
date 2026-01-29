@@ -47,6 +47,7 @@ namespace Clubhouse.Games.FoodCatch.Core
             {
                 case CAUGHT:
                     HapticManager.Instance.PlayHaptic(HapticType.OnCorrect);
+                    ResetStreakTimer();
                     textType = Random.value < 0.5f ? TextEffectType.Nice : TextEffectType.Amazing;
                     break;
                 case DROP:
