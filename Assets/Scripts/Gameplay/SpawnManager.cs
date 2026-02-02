@@ -28,7 +28,6 @@ namespace Clubhouse.Games.Gameplay
 
         private void StartSpawning()
         {
-            spawnTimer.ResetTimer();
             spawnTimer.Enable();
         }
 
@@ -44,7 +43,7 @@ namespace Clubhouse.Games.Gameplay
             {
                 spawnTimer.Disable();
                 interval = Mathf.Max(minInterval, interval - speedUpRate);
-                spawnTimer = new Timer(interval, PlayThrowAnim);
+                spawnTimer.SetTimerDuration(interval);
                 spawnCount = Random.Range(1, maxExCount);
                 Invoke(nameof(StartSpawning), spawnDelay);
             }

@@ -48,34 +48,26 @@ namespace Clubhouse.Games.FoodCatch.Core
         }
 
         public void CreateFood()
-{
-    bool spawnEdible = Random.value <= config.edibleRatio;
-    Food.FoodType foodType = spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible;
-
-    Food food = pool[(int)foodType].Get(reference.envParent);
-
-    Sprite foodSprite = spawnEdible
-        ? config.edibles[Random.Range(0, config.edibles.Length)]
-        : config.inedibles[Random.Range(0, config.inedibles.Length)];
-
-    food.Init(spawnPoint.position, foodSprite);
-
-    // Apply visual changes ONLY for inedible food
-    if (!spawnEdible && food.transform.childCount > 0)
-    {
-        Transform firstChild = food.transform.GetChild(0);
-        SpriteRenderer sr = firstChild.GetComponent<SpriteRenderer>();
-
-        if (sr != null)
         {
-            sr.sprite = foodSprite;
-            sr.color = Color.red;
-            firstChild.localScale = new Vector3(1.12f, 1.12f,1.12f);
+            bool spawnEdible = Random.value <= config.edibleRatio;
+            Food.FoodType foodType = spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible;
+
+            Food food = pool[(int)foodType].Get(reference.envParent);
+
+            Sprite foodSprite = spawnEdible
+                ? config.edibles[Random.Range(0, config.edibles.Length)]
+                : config.inedibles[Random.Range(0, config.inedibles.Length)];
+
+            food.Init(spawnPoint.position, foodSprite);
+
+            // Apply border ONLY for inedible food
+            if (!spawnEdible && food.transform.GetChild(0) is Transform border && border.TryGetComponent<SpriteRenderer>(out var sr))
+            {
+                sr.sprite = foodSprite;
+                sr.color = Color.red;
+                border.localScale = Vector3.one * 1.2f;
+            }
         }
-    }
-}
-
-
 
         public void Despawn(Food food)
         {
