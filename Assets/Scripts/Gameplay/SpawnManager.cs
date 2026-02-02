@@ -6,10 +6,17 @@ namespace Clubhouse.Games.Gameplay
     public class SpawnManager : MonoBehaviour
     {
         private System.Action spawnEvent;
-        private int spawnCount, maxExCount;
-        [SerializeField] private float interval, spawnDelay;
+        private int spawnCount;
+        private int maxExCount;
+
+        [SerializeField] private float interval = 2f;
+        [SerializeField] private float minInterval = 0.4f;
+        [SerializeField] private float speedUpRate = 0.1f;
+        [SerializeField] private float spawnDelay = 1f;
+
         private Timer spawnTimer;
         private Animator animator;
+
         public void Init(int maxCount, System.Action spawnAction)
         {
             spawnEvent = spawnAction;
@@ -25,14 +32,19 @@ namespace Clubhouse.Games.Gameplay
             spawnTimer.Enable();
         }
 
-        void PlayThrowAnim()
+        private void PlayThrowAnim()
         {
             animator.Play("Throw");
+
             if (--spawnCount > 0)
+            {
                 spawnTimer.ResetTimer();
+            }
             else
             {
                 spawnTimer.Disable();
+                interval = Mathf.Max(minInterval, interval - speedUpRate);
+                spawnTimer = new Timer(interval, PlayThrowAnim);
                 spawnCount = Random.Range(1, maxExCount);
                 Invoke(nameof(StartSpawning), spawnDelay);
             }
@@ -43,13 +55,12 @@ namespace Clubhouse.Games.Gameplay
             spawnEvent?.Invoke();
         }
 
-        void Start()
+        private void Start()
         {
             animator = GetComponent<Animator>();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
             spawnTimer?.Update(Time.deltaTime);
         }

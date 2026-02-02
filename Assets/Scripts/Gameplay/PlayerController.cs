@@ -8,17 +8,18 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         private const string IsMoving = "isMoving";
 
         [SerializeField]
-        private float maxSpeed, boundValue;
+        private float maxSpeed;
+        [SerializeField] private Vector2 boundValue;
         private Animator animController;
 
         private float currentSpeed;
-        private float lerpRate;
+        [SerializeField]private float lerpRate;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             animController = GetComponent<Animator>();
-            lerpRate = 0.1f;
+            lerpRate = 0.2f;
         }
 
         // Update is called once per frame
@@ -61,7 +62,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
         {
             Vector3 currentPosition = transform.position;
             currentPosition.x += GetSpeed() * multiplier * Time.deltaTime;
-            currentPosition.x = Mathf.Clamp(currentPosition.x, -boundValue, boundValue);
+            currentPosition.x = Mathf.Clamp(currentPosition.x, boundValue.x, boundValue.y);
             transform.localScale = new Vector3(multiplier == -1 ? 1 : -1, 1, 1);
             transform.position = currentPosition;
         }
@@ -84,7 +85,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
                 float angle = 70;
                 return CalculateImpulseForce(food.rb, start, target, angle);
             }
-            return new Vector2(1.25f, 4.5f);
+            return new Vector2(1.25f, 5.5f);
         }
 
         private System.Collections.IEnumerator ScaleOverTime(Food food, float scale, float duration)
@@ -103,12 +104,12 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
 
         private bool IsSafePointNear()
         {
-            return transform.position.x > boundValue * 0.6f;
+            return transform.position.x > boundValue.y * 0.6f;
         }
 
         private bool CanBounceFromEdge(bool onEdge)
         {
-            return (onEdge && transform.position.x > boundValue * 0.1f);
+            return (onEdge && transform.position.x > boundValue.y * 0.1f);
         }
 
         public static Vector2 CalculateImpulseForce(Rigidbody2D rb, Vector2 start, Vector2 target, float angleDegrees)

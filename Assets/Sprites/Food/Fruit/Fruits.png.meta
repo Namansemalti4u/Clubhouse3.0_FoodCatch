@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,177 +147,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fruit Sheet_0
+      name: Fruits_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 703
-        width: 228
-        height: 349
+        x: 0
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2c6eb61797c59a690800000000000000
-      internalID: -7590434020292565310
+      spriteID: 5eea5c4aeb6876a48bdc21b3ce136b7b
+      internalID: -1057364157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_1
+      name: Fruits_1
       rect:
         serializedVersion: 2
-        x: 466
-        y: 644
-        width: 490
-        height: 408
+        x: 696
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8875c4bea2fc47c10800000000000000
-      internalID: 2050491513603643272
+      spriteID: fda301f53626cc64d9e4bc0af6500e6b
+      internalID: -1396892314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_2
+      name: Fruits_2
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 801
-        width: 189
-        height: 177
+        x: 1392
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: af59b5906de494560800000000000000
-      internalID: 7298451352317564410
+      spriteID: 4354a86b5a2ebec4c9a1697a1a8336eb
+      internalID: -413561604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_3
+      name: Fruits_3
       rect:
         serializedVersion: 2
-        x: 1527
-        y: 719
-        width: 296
-        height: 316
+        x: 0
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05cb58c5d1ff60d80800000000000000
-      internalID: -8284653962930045872
+      spriteID: 19359fb67222d8e4893cb900d856529c
+      internalID: 931932591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_4
+      name: Fruits_4
       rect:
         serializedVersion: 2
-        x: 79
-        y: 36
-        width: 248
-        height: 272
+        x: 696
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dfe62a128d845f1d0800000000000000
-      internalID: -3317665457374073091
+      spriteID: 4544399cc7fc3a54aba72381918c5896
+      internalID: 1548823779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_5
+      name: Fruits_5
       rect:
         serializedVersion: 2
-        x: 479
-        y: 36
-        width: 397
-        height: 380
+        x: 1392
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c18d356f98e4ff3e0800000000000000
-      internalID: -2017807753588516836
+      spriteID: 379a2c140670f714693894d6bf4c9aa6
+      internalID: -1327222718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_6
+      name: Fruits_6
       rect:
         serializedVersion: 2
-        x: 1042
-        y: 36
-        width: 330
-        height: 565
+        x: 0
+        y: 0
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4ebc4b7cfef5663f0800000000000000
-      internalID: -907932791416239132
+      spriteID: aa16eae434448c540b24b3996934e779
+      internalID: -424529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fruit Sheet_7
+      name: Fruits_7
       rect:
         serializedVersion: 2
-        x: 1519
-        y: 36
-        width: 311
-        height: 257
+        x: 696
+        y: 0
+        width: 696
+        height: 848
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 970e42924f3313730800000000000000
-      internalID: 3977017069700178041
+      spriteID: 68af9935828ace44fa72911c934346ec
+      internalID: -1747684428
       vertices: []
       indices: 
       edges: []
@@ -326,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 83ad3e66f9c17b34bb1faa06d3730c07
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +336,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fruit Sheet_0: -7590434020292565310
-      Fruit Sheet_1: 2050491513603643272
-      Fruit Sheet_2: 7298451352317564410
-      Fruit Sheet_3: -8284653962930045872
-      Fruit Sheet_4: -3317665457374073091
-      Fruit Sheet_5: -2017807753588516836
-      Fruit Sheet_6: -907932791416239132
-      Fruit Sheet_7: 3977017069700178041
+      Fruits_0: -1057364157
+      Fruits_1: -1396892314
+      Fruits_2: -413561604
+      Fruits_3: 931932591
+      Fruits_4: 1548823779
+      Fruits_5: -1327222718
+      Fruits_6: -424529
+      Fruits_7: -1747684428
+      Fruits_8: 1332799781
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

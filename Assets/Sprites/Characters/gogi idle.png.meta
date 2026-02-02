@@ -217,9 +217,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5400
-        width: 1080
-        height: 1080
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,10 +238,10 @@ TextureImporter:
       name: gogi idle_1
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: gogi idle_2
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,10 +282,10 @@ TextureImporter:
       name: gogi idle_3
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,10 +304,10 @@ TextureImporter:
       name: gogi idle_4
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: gogi idle_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,10 +348,10 @@ TextureImporter:
       name: gogi idle_6
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: gogi idle_7
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,10 +392,10 @@ TextureImporter:
       name: gogi idle_8
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -414,10 +414,10 @@ TextureImporter:
       name: gogi idle_9
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +436,10 @@ TextureImporter:
       name: gogi idle_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: gogi idle_11
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,10 +480,10 @@ TextureImporter:
       name: gogi idle_12
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,10 +502,10 @@ TextureImporter:
       name: gogi idle_13
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,10 +524,10 @@ TextureImporter:
       name: gogi idle_14
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +546,10 @@ TextureImporter:
       name: gogi idle_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +568,10 @@ TextureImporter:
       name: gogi idle_16
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -590,10 +590,10 @@ TextureImporter:
       name: gogi idle_17
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -612,10 +612,10 @@ TextureImporter:
       name: gogi idle_18
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,10 +634,10 @@ TextureImporter:
       name: gogi idle_19
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,19 +656,19 @@ TextureImporter:
       name: gogi idle_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2626b6fd7b96a04e0800000000000000
+      spriteID: 1547f1383798a2a41b93ee459ac80a12
       internalID: -2014681644846587294
       vertices: []
       indices: 
@@ -678,19 +678,19 @@ TextureImporter:
       name: gogi idle_21
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a38dcf5c0d58957e0800000000000000
+      spriteID: 6a0ef32eb43237348a97e152c9aaa7b8
       internalID: -1776241446299576262
       vertices: []
       indices: 
@@ -700,19 +700,19 @@ TextureImporter:
       name: gogi idle_22
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ce9d7f17a6d8b29a0800000000000000
+      spriteID: 17a3dad8e21de61418fa4637e616bda1
       internalID: -6256751768983053844
       vertices: []
       indices: 
@@ -722,19 +722,19 @@ TextureImporter:
       name: gogi idle_23
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5dc4768df6b022ea0800000000000000
+      spriteID: 0b8a3d8bdf45e214e8f739032c23b98c
       internalID: -5899139986902004523
       vertices: []
       indices: 
@@ -744,19 +744,19 @@ TextureImporter:
       name: gogi idle_24
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2a0e518c2478b5370800000000000000
+      spriteID: e2c531a7805ec264bb57fda0a9ab269d
       internalID: 8312386258136850594
       vertices: []
       indices: 
@@ -766,19 +766,19 @@ TextureImporter:
       name: gogi idle_25
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1024
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f19fca060afdae6a0800000000000000
+      spriteID: 3b99febc3cf6cfe43970edd911edd57a
       internalID: -6419072438953510625
       vertices: []
       indices: 
@@ -788,19 +788,19 @@ TextureImporter:
       name: gogi idle_26
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 2048
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 43ebd5cef81088c50800000000000000
+      spriteID: 937a6810f118b4040a59f7fe98a3e0e1
       internalID: 6667580965979536948
       vertices: []
       indices: 
@@ -810,19 +810,19 @@ TextureImporter:
       name: gogi idle_27
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 3072
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 92211918fc7492520800000000000000
+      spriteID: 3761d9247c7b5a54a8ceffaa09dbff95
       internalID: 2677750410006041129
       vertices: []
       indices: 
@@ -832,19 +832,19 @@ TextureImporter:
       name: gogi idle_28
       rect:
         serializedVersion: 2
-        x: 3240
+        x: 4096
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 63c294b1258ea0220800000000000000
+      spriteID: c9532ca6d3063994298d1806f81e9732
       internalID: 2453028386399398966
       vertices: []
       indices: 
@@ -854,19 +854,19 @@ TextureImporter:
       name: gogi idle_29
       rect:
         serializedVersion: 2
-        x: 4320
+        x: 5120
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 576fec14cf735f020800000000000000
+      spriteID: 5f734b1c5d5c4244b9e2228505881481
       internalID: 2374865935083173493
       vertices: []
       indices: 

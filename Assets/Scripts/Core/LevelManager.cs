@@ -48,13 +48,34 @@ namespace Clubhouse.Games.FoodCatch.Core
         }
 
         public void CreateFood()
+{
+    bool spawnEdible = Random.value <= config.edibleRatio;
+    Food.FoodType foodType = spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible;
+
+    Food food = pool[(int)foodType].Get(reference.envParent);
+
+    Sprite foodSprite = spawnEdible
+        ? config.edibles[Random.Range(0, config.edibles.Length)]
+        : config.inedibles[Random.Range(0, config.inedibles.Length)];
+
+    food.Init(spawnPoint.position, foodSprite);
+
+    // Apply visual changes ONLY for inedible food
+    if (!spawnEdible && food.transform.childCount > 0)
+    {
+        Transform firstChild = food.transform.GetChild(0);
+        SpriteRenderer sr = firstChild.GetComponent<SpriteRenderer>();
+
+        if (sr != null)
         {
-            bool spawnEdible = Random.value <= config.edibleRatio;
-            int index = (int)(spawnEdible ? Food.FoodType.Edible : Food.FoodType.Inedible);
-            var food = pool[index].Get(reference.envParent);
-            var foodSprite = spawnEdible ? config.edibles[Random.Range(0, config.edibles.Length)] : config.inedibles[Random.Range(0, config.inedibles.Length)];
-            food.Init(spawnPoint.position, foodSprite);
+            sr.sprite = foodSprite;
+            sr.color = Color.red;
+            firstChild.localScale = new Vector3(1.12f, 1.12f,1.12f);
         }
+    }
+}
+
+
 
         public void Despawn(Food food)
         {

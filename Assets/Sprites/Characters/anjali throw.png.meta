@@ -32,6 +32,66 @@ TextureImporter:
   - first:
       213: -4777141332437876649
     second: anjali throw_9
+  - first:
+      213: -1709821600306188135
+    second: anjali throw_10
+  - first:
+      213: 4251409234499026176
+    second: anjali throw_11
+  - first:
+      213: 4280238048375200207
+    second: anjali throw_12
+  - first:
+      213: -3428111849348566160
+    second: anjali throw_13
+  - first:
+      213: 1569174194244973608
+    second: anjali throw_14
+  - first:
+      213: 3306451232843391355
+    second: anjali throw_15
+  - first:
+      213: -7220555228364637423
+    second: anjali throw_16
+  - first:
+      213: 6633697058768460035
+    second: anjali throw_17
+  - first:
+      213: -222284905606204046
+    second: anjali throw_18
+  - first:
+      213: 890666176550767537
+    second: anjali throw_19
+  - first:
+      213: -6603777789988613537
+    second: anjali throw_20
+  - first:
+      213: 6880411935663557722
+    second: anjali throw_21
+  - first:
+      213: -2048043817640561964
+    second: anjali throw_22
+  - first:
+      213: -6101054751960155996
+    second: anjali throw_23
+  - first:
+      213: -3773670175023488083
+    second: anjali throw_24
+  - first:
+      213: 5172104346325272064
+    second: anjali throw_25
+  - first:
+      213: -5271208331530584038
+    second: anjali throw_26
+  - first:
+      213: -8917730844155760089
+    second: anjali throw_27
+  - first:
+      213: 391862569913468782
+    second: anjali throw_28
+  - first:
+      213: 4985539663276172586
+    second: anjali throw_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +138,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 180
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,9 +217,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5400
-        width: 1080
-        height: 1080
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +238,10 @@ TextureImporter:
       name: anjali throw_1
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +260,10 @@ TextureImporter:
       name: anjali throw_2
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +282,10 @@ TextureImporter:
       name: anjali throw_3
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +304,10 @@ TextureImporter:
       name: anjali throw_4
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 5400
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +326,10 @@ TextureImporter:
       name: anjali throw_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 4096
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +348,10 @@ TextureImporter:
       name: anjali throw_6
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +370,10 @@ TextureImporter:
       name: anjali throw_7
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +392,10 @@ TextureImporter:
       name: anjali throw_8
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +414,10 @@ TextureImporter:
       name: anjali throw_9
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 4320
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +436,20 @@ TextureImporter:
       name: anjali throw_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8ac964180d436dd43b4b09d4dc546cde
-      internalID: -159701246
+      spriteID: 990b574405e7548e0800000000000000
+      internalID: -1709821600306188135
       vertices: []
       indices: 
       edges: []
@@ -398,20 +458,20 @@ TextureImporter:
       name: anjali throw_11
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 3072
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: baa68869e33c2954bbfb41a5a82035bd
-      internalID: 478568228
+      spriteID: 00d31218c2a000b30800000000000000
+      internalID: 4251409234499026176
       vertices: []
       indices: 
       edges: []
@@ -420,20 +480,20 @@ TextureImporter:
       name: anjali throw_12
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8551a37e3471fb74cbef20df8ff846c6
-      internalID: 359095967
+      spriteID: fc9d38bc3d5766b30800000000000000
+      internalID: 4280238048375200207
       vertices: []
       indices: 
       edges: []
@@ -442,20 +502,20 @@ TextureImporter:
       name: anjali throw_13
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8361676398a15f24baf4037bdecc14c4
-      internalID: -1163185325
+      spriteID: 07375499f66ec60d0800000000000000
+      internalID: -3428111849348566160
       vertices: []
       indices: 
       edges: []
@@ -464,20 +524,20 @@ TextureImporter:
       name: anjali throw_14
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 3240
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aa2366b9c2b6bde4082766ef1567418f
-      internalID: 827887727
+      spriteID: 8247ea6ad93d6c510800000000000000
+      internalID: 1569174194244973608
       vertices: []
       indices: 
       edges: []
@@ -486,20 +546,20 @@ TextureImporter:
       name: anjali throw_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 11c9e0748821a4047a54d0f1f92ee9a5
-      internalID: -995922207
+      spriteID: b7168c0c0efd2ed20800000000000000
+      internalID: 3306451232843391355
       vertices: []
       indices: 
       edges: []
@@ -508,20 +568,20 @@ TextureImporter:
       name: anjali throw_16
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1d6605f2d914ee84a844a063d827f5d1
-      internalID: 206841359
+      spriteID: 11b7c34a64f6bcb90800000000000000
+      internalID: -7220555228364637423
       vertices: []
       indices: 
       edges: []
@@ -530,20 +590,20 @@ TextureImporter:
       name: anjali throw_17
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 2048
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8e8ae977bbe9d34f8d848f35e0642ff
-      internalID: -406400246
+      spriteID: 309927ff350af0c50800000000000000
+      internalID: 6633697058768460035
       vertices: []
       indices: 
       edges: []
@@ -552,20 +612,20 @@ TextureImporter:
       name: anjali throw_18
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8bd6d1bf93f708645b7cdb934d2158de
-      internalID: -124852180
+      spriteID: 275396a5e094aecf0800000000000000
+      internalID: -222284905606204046
       vertices: []
       indices: 
       edges: []
@@ -574,20 +634,20 @@ TextureImporter:
       name: anjali throw_19
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 2160
-        width: 1080
-        height: 1080
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d8a0270189e84104a8238af43c4b7603
-      internalID: -1848907960
+      spriteID: 1bb83ca2b284c5c00800000000000000
+      internalID: 890666176550767537
       vertices: []
       indices: 
       edges: []
@@ -596,20 +656,20 @@ TextureImporter:
       name: anjali throw_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 2048
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 03a48a87f3cf81e41b8b32d82918e0a5
-      internalID: -1936017896
+      spriteID: f525d1c961baa54a0800000000000000
+      internalID: -6603777789988613537
       vertices: []
       indices: 
       edges: []
@@ -618,20 +678,20 @@ TextureImporter:
       name: anjali throw_21
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 3072
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49834093d6e086641a2c7fe002a827b2
-      internalID: 368172612
+      spriteID: a5c859593322c7f50800000000000000
+      internalID: 6880411935663557722
       vertices: []
       indices: 
       edges: []
@@ -640,20 +700,20 @@ TextureImporter:
       name: anjali throw_22
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 4096
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 351ef9ce5fd7e36469af35da8ab06404
-      internalID: -818965516
+      spriteID: 4d27915bff2e393e0800000000000000
+      internalID: -2048043817640561964
       vertices: []
       indices: 
       edges: []
@@ -662,20 +722,20 @@ TextureImporter:
       name: anjali throw_23
       rect:
         serializedVersion: 2
-        x: 3240
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 5120
+        y: 1024
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06510408a4181244f990328ba362f3f2
-      internalID: 1238675107
+      spriteID: 4a8b4322703b45ba0800000000000000
+      internalID: -6101054751960155996
       vertices: []
       indices: 
       edges: []
@@ -684,20 +744,20 @@ TextureImporter:
       name: anjali throw_24
       rect:
         serializedVersion: 2
-        x: 4320
-        y: 1080
-        width: 1080
-        height: 1080
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a1f750df62ed9b14aae9c48b3ea0c82f
-      internalID: -1953427435
+      spriteID: da32d3638fa31abc0800000000000000
+      internalID: -3773670175023488083
       vertices: []
       indices: 
       edges: []
@@ -706,20 +766,20 @@ TextureImporter:
       name: anjali throw_25
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1024
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c771bfbda69baad42a54a5d1fd3a2894
-      internalID: -2137489149
+      spriteID: 006c8ffff7107c740800000000000000
+      internalID: 5172104346325272064
       vertices: []
       indices: 
       edges: []
@@ -728,20 +788,20 @@ TextureImporter:
       name: anjali throw_26
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 2048
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 01e06dfd8b734ea488e5737d02d17d96
-      internalID: -1494614816
+      spriteID: a104a0653f7e8d6b0800000000000000
+      internalID: -5271208331530584038
       vertices: []
       indices: 
       edges: []
@@ -750,20 +810,20 @@ TextureImporter:
       name: anjali throw_27
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 3072
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fecf7350aeefa8d4f99d6d336350f34e
-      internalID: 1035127444
+      spriteID: 7223d8f9b0bdd3480800000000000000
+      internalID: -8917730844155760089
       vertices: []
       indices: 
       edges: []
@@ -772,20 +832,20 @@ TextureImporter:
       name: anjali throw_28
       rect:
         serializedVersion: 2
-        x: 3240
+        x: 4096
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c468abcb7230b9e459ac9a8de1725221
-      internalID: 880635324
+      spriteID: e67c6706eec207500800000000000000
+      internalID: 391862569913468782
       vertices: []
       indices: 
       edges: []
@@ -794,20 +854,20 @@ TextureImporter:
       name: anjali throw_29
       rect:
         serializedVersion: 2
-        x: 4320
+        x: 5120
         y: 0
-        width: 1080
-        height: 1080
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 390d4bd9012d3254ca0c69c43c420611
-      internalID: 1812792808
+      spriteID: a256233c8e1303540800000000000000
+      internalID: 4985539663276172586
       vertices: []
       indices: 
       edges: []
@@ -816,7 +876,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 94aeb26ffe1db264195eab7b0dc6dcd0
+    spriteID: 392581b35cc78a44eabe7d7b0018d51f
     internalID: 0
     vertices: []
     indices: 
@@ -828,27 +888,27 @@ TextureImporter:
     nameFileIdTable:
       anjali throw_0: 105811126765503133
       anjali throw_1: -2890940226651893822
-      anjali throw_10: -159701246
-      anjali throw_11: 478568228
-      anjali throw_12: 359095967
-      anjali throw_13: -1163185325
-      anjali throw_14: 827887727
-      anjali throw_15: -995922207
-      anjali throw_16: 206841359
-      anjali throw_17: -406400246
-      anjali throw_18: -124852180
-      anjali throw_19: -1848907960
+      anjali throw_10: -1709821600306188135
+      anjali throw_11: 4251409234499026176
+      anjali throw_12: 4280238048375200207
+      anjali throw_13: -3428111849348566160
+      anjali throw_14: 1569174194244973608
+      anjali throw_15: 3306451232843391355
+      anjali throw_16: -7220555228364637423
+      anjali throw_17: 6633697058768460035
+      anjali throw_18: -222284905606204046
+      anjali throw_19: 890666176550767537
       anjali throw_2: 7423472917109765319
-      anjali throw_20: -1936017896
-      anjali throw_21: 368172612
-      anjali throw_22: -818965516
-      anjali throw_23: 1238675107
-      anjali throw_24: -1953427435
-      anjali throw_25: -2137489149
-      anjali throw_26: -1494614816
-      anjali throw_27: 1035127444
-      anjali throw_28: 880635324
-      anjali throw_29: 1812792808
+      anjali throw_20: -6603777789988613537
+      anjali throw_21: 6880411935663557722
+      anjali throw_22: -2048043817640561964
+      anjali throw_23: -6101054751960155996
+      anjali throw_24: -3773670175023488083
+      anjali throw_25: 5172104346325272064
+      anjali throw_26: -5271208331530584038
+      anjali throw_27: -8917730844155760089
+      anjali throw_28: 391862569913468782
+      anjali throw_29: 4985539663276172586
       anjali throw_3: 8897765945352069518
       anjali throw_4: 1290016390813649081
       anjali throw_5: -2908314153871540775

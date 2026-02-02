@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,133 +141,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Damage Fruit sheet_0
+      name: Damaged Fruits_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 695
-        width: 234
-        height: 357
+        x: 0
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8574ca5181a8b2380800000000000000
-      internalID: -8994943994694973608
+      spriteID: 4071b5d3650fc8a41be3856741e6816e
+      internalID: 1386965083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damage Fruit sheet_1
+      name: Damaged Fruits_1
       rect:
         serializedVersion: 2
-        x: 550
-        y: 638
-        width: 411
-        height: 379
+        x: 696
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 087a59becdbd68cf0800000000000000
-      internalID: -250270987380742272
+      spriteID: a728f16a702031940b2d2e0208c7c147
+      internalID: 1555233165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damage Fruit sheet_2
+      name: Damaged Fruits_2
       rect:
         serializedVersion: 2
-        x: 1205
-        y: 695
-        width: 301
-        height: 322
+        x: 1392
+        y: 1696
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 82cd7ae7db55814e0800000000000000
-      internalID: -2010762961258816472
+      spriteID: 4526e2b44edd051499a42a0d66967c38
+      internalID: -582309757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damage Fruit sheet_3
+      name: Damaged Fruits_3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 36
-        width: 251
-        height: 278
+        x: 0
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bdc43d26402e83330800000000000000
-      internalID: 3690948403095882971
+      spriteID: 307c36c55d0b4684dabf72d067e67b08
+      internalID: -711489075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damage Fruit sheet_4
+      name: Damaged Fruits_4
       rect:
         serializedVersion: 2
-        x: 594
-        y: 16
-        width: 347
-        height: 566
+        x: 696
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e2739490d9873800800000000000000
-      internalID: 592093404961403625
+      spriteID: 54883a2c29ebfc240a039172ade818d2
+      internalID: 730250289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damage Fruit sheet_5
+      name: Damaged Fruits_5
       rect:
         serializedVersion: 2
-        x: 1165
-        y: 43
-        width: 311
-        height: 264
+        x: 1392
+        y: 848
+        width: 696
+        height: 848
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 411258bcd8864cc80800000000000000
-      internalID: -8303396854750174956
+      spriteID: bcc37249ee3c30d48963193f77977cea
+      internalID: -1184691258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damaged Fruits_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 696
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37912ef8d94f4342b587cad0bb5ec16
+      internalID: -1172542476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damaged Fruits_7
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 0
+        width: 696
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a891b6117e5986f4aa05943c3d5ddac4
+      internalID: -1313089188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Damaged Fruits_8
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 0
+        width: 696
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce5cc39b9f248e42bb0721a5edcdc60
+      internalID: -1462068860
       vertices: []
       indices: 
       edges: []
@@ -276,7 +342,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: abaa5330d0b0ed64f83585a6e78e6980
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +352,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Damage Fruit sheet_0: -8994943994694973608
-      Damage Fruit sheet_1: -250270987380742272
-      Damage Fruit sheet_2: -2010762961258816472
-      Damage Fruit sheet_3: 3690948403095882971
-      Damage Fruit sheet_4: 592093404961403625
-      Damage Fruit sheet_5: -8303396854750174956
+      Damaged Fruits_0: 1386965083
+      Damaged Fruits_1: 1555233165
+      Damaged Fruits_2: -582309757
+      Damaged Fruits_3: -711489075
+      Damaged Fruits_4: 730250289
+      Damaged Fruits_5: -1184691258
+      Damaged Fruits_6: -1172542476
+      Damaged Fruits_7: -1313089188
+      Damaged Fruits_8: -1462068860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
