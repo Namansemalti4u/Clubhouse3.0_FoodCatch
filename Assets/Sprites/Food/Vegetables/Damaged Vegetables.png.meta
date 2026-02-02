@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,11 +142,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1224
-        width: 572
-        height: 612
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: Damaged Vegetables_1
       rect:
         serializedVersion: 2
-        x: 572
-        y: 1224
-        width: 572
-        height: 612
+        x: 256
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,12 +185,12 @@ TextureImporter:
       name: Damaged Vegetables_2
       rect:
         serializedVersion: 2
-        x: 1144
-        y: 1224
-        width: 572
-        height: 612
+        x: 512
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: Damaged Vegetables_3
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 1224
-        width: 572
-        height: 612
+        x: 768
+        y: 512
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,11 +230,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 612
-        width: 572
-        height: 612
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: Damaged Vegetables_5
       rect:
         serializedVersion: 2
-        x: 572
-        y: 612
-        width: 572
-        height: 612
+        x: 256
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,12 +273,12 @@ TextureImporter:
       name: Damaged Vegetables_6
       rect:
         serializedVersion: 2
-        x: 1144
-        y: 612
-        width: 572
-        height: 612
+        x: 512
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: Damaged Vegetables_7
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 612
-        width: 572
-        height: 612
+        x: 768
+        y: 256
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,17 +319,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 572
-        height: 612
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e4e1e4168a669048b8fa92a9266ea4e
+      spriteID: c02efb2256535fd469dc5cd4c930051f
       internalID: -1854084914
       vertices: []
       indices: 
@@ -339,19 +339,19 @@ TextureImporter:
       name: Damaged Vegetables_9
       rect:
         serializedVersion: 2
-        x: 572
+        x: 256
         y: 0
-        width: 572
-        height: 612
+        width: 256
+        height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f30b13eded4ebb04aa55b3bd77a69686
+      spriteID: 62dd66dbebc67bd4f9e277b38e10a431
       internalID: 1824282032
       vertices: []
       indices: 
@@ -373,8 +373,6 @@ TextureImporter:
     nameFileIdTable:
       Damaged Vegetables_0: -1127675652
       Damaged Vegetables_1: 124327974
-      Damaged Vegetables_10: 468796340
-      Damaged Vegetables_11: -2025773556
       Damaged Vegetables_2: 1513227407
       Damaged Vegetables_3: -1761812297
       Damaged Vegetables_4: 105135603

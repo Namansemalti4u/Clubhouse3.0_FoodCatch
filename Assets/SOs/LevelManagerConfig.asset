@@ -19,16 +19,6 @@ MonoBehaviour:
     spawnCount: 3
     edibleRatio: 0.75
     edibles:
-    - {fileID: -9115938624207856695, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -8198574232401945530, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: 7710496705314228017, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -5321099399631716182, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -1793167431768321461, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -6949385356650754131, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: 6512634512270057540, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -7430669329385756642, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -3146629568311226097, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
-    - {fileID: -156822502178163421, guid: fcc47260aa17af645b360e99037d8ce9, type: 3}
     - {fileID: -1057364157, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
     - {fileID: -1396892314, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
     - {fileID: -413561604, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
@@ -37,6 +27,15 @@ MonoBehaviour:
     - {fileID: -1327222718, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
     - {fileID: -424529, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
     - {fileID: -1747684428, guid: 2937cac4acab09f409139b537dd0b10d, type: 3}
+    - {fileID: 1386965083, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: 1555233165, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -582309757, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -711489075, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: 730250289, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -1184691258, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -1172542476, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -1313089188, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
+    - {fileID: -1462068860, guid: 39393ae4697d7f54f88742cf688b0a81, type: 3}
     inedibles:
     - {fileID: -1127675652, guid: f78016a718f878d45aec1df690bed879, type: 3}
     - {fileID: 124327974, guid: f78016a718f878d45aec1df690bed879, type: 3}

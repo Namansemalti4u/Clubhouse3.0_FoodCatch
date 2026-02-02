@@ -64,8 +64,6 @@ namespace Clubhouse.Games.FoodCatch.Core
             if (!spawnEdible && food.transform.GetChild(0) is Transform border && border.TryGetComponent<SpriteRenderer>(out var sr))
             {
                 sr.sprite = foodSprite;
-                sr.color = Color.red;
-                border.localScale = Vector3.one * 1.2f;
             }
         }
 
