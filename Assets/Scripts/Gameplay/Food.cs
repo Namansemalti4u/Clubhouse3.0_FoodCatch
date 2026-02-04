@@ -9,8 +9,6 @@ public class Food : MonoBehaviour
     public Rigidbody2D rb;
     private Timer despawnTimer;
     private Vector2 force;
-    private const float MAX_HEIGHT = 4.3f;
-    private float maxUpwardVelocity;
 
     public FoodType foodType;
     public enum FoodType
@@ -22,16 +20,7 @@ public class Food : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        CalculateMaxUpwardVelocity();
-        SetDespawnTimer();
-    }
-
-    private void SetDespawnTimer()
-    {
-        if (despawnTimer == null)
-            despawnTimer = new Timer(2f, Despawn);
-        else
-            despawnTimer.ResetTimer();
+        despawnTimer ??= new Timer(2f, Despawn);
     }
 
     private void Despawn()
@@ -45,28 +34,14 @@ public class Food : MonoBehaviour
         despawnTimer.Update(Time.deltaTime);
     }
 
-    void FixedUpdate()
-    {
-        if (rb.linearVelocity.y > maxUpwardVelocity)
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, maxUpwardVelocity);
-    }
-
-    private void CalculateMaxUpwardVelocity()
-    {
-        float gravity = Mathf.Abs(Physics2D.gravity.y * rb.gravityScale);
-        maxUpwardVelocity = Mathf.Sqrt(2f * gravity * MAX_HEIGHT);
-    }
-
     public void Init(Vector3 position, Sprite foodSprite)
     {
-        transform.localScale = Vector3.one;
-        transform.position = position;
         GetComponent<SpriteRenderer>().sprite = foodSprite;
+        transform.position = position;
+        transform.localScale = Vector3.one;
         despawnTimer.ResetTimer();
         rb.constraints = RigidbodyConstraints2D.None;
-        rb.linearVelocity = Vector2.zero;
-        CalculateMaxUpwardVelocity();
-        BounceOffFromPlayer(Random.Range(0.6f, 1.25f), 4.5f);
+        BounceOffFromPlayer(Random.Range(0.6f, 1.25f), 3f);
         rb.angularVelocity = -Random.Range(75f, 100f);
     }
 

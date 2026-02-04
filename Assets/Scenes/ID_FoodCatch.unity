@@ -535,8 +535,8 @@ MonoBehaviour:
   player: {fileID: 379148892}
   moveThreshold: 0.01
   smoothSpeed: 30
-  minX: -2.5
-  maxX: 2.5
+  minX: -2
+  maxX: 2
 --- !u!1 &535874956
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,13 +699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752581405}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.9906668, w: 0.13630626}
-  m_LocalPosition: {x: 0.81, y: -0.70000005, z: 0}
-  m_LocalScale: {x: 0.7070362, y: -0.7315746, z: 0.87869453}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: 0.95, y: -0.46, z: 0}
+  m_LocalScale: {x: 0.7070362, y: 0.7315746, z: 0.87869453}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1122844612443152239}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 164.332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!212 &752581408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -749,13 +749,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -7575783373880847871, guid: 8aef02bc844815343be92bcad2ba8afe, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.12156863}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.688889, y: 5.69}
+  m_Size: {x: 4.266667, y: 4.266667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1111,7 +1111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -5420609483297451444, guid: 48467fe5b2c27d6479d3a6899396bc38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1445,7 +1445,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.688889, y: 5.69}
+  m_Size: {x: 4.266667, y: 4.266667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1478,10 +1478,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 36276451}
     m_Modifications:
-    - target: {fileID: 1222893692622258336, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3482022744227315435, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1525,10 +1521,6 @@ PrefabInstance:
     - target: {fileID: 5655017464196650773, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7577399883312718361, guid: 58816eed4f75f884c98daa0a4ed9711a, type: 3}
-      propertyPath: m_Color.a
-      value: 0.12156863
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
