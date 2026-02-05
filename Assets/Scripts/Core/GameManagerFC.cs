@@ -41,7 +41,7 @@ namespace Clubhouse.Games.FoodCatch.Core
 
         public override void GameOver()
         {
-            // LevelManager.Instance.gameObject.SetActive(false);
+            LevelManager.Instance.gameObject.SetActive(false);
             base.GameOver();
         }
         #endregion

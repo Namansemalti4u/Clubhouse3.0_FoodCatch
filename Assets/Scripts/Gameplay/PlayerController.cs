@@ -85,7 +85,7 @@ namespace Clubhouse.Games.FoodCatch.Gameplay
                 float angle = 70;
                 return CalculateImpulseForce(food.rb, start, target, angle);
             }
-            return new Vector2(1.25f, 3.5f);
+            return new Vector2(1.25f, 4f);
         }
 
         private System.Collections.IEnumerator ScaleOverTime(Food food, float scale, float duration)
